@@ -1,0 +1,89 @@
+
+.Board {
+  height: 500px;
+  width: 400px;
+  background-color: #2f3542;
+  display: flex;
+  margin: auto auto;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .main {
+    width: 100%;
+    flex: 1;
+
+    .add-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .input {
+        flex: 1;
+        margin-right: 10px;
+        background-color: white;
+        padding: 8px 18px;
+        border-radius: 10px;
+
+        input {
+          outline: none;
+          border: none;
+          width: 100%;
+        }
+      }
+
+      .btn-add-card {
+        cursor: pointer;
+        color: #fff;
+        padding: 8px 18px;
+        background-color: #ff6b81;
+        border-radius: 10px;
+        &:active {
+          transform: translateY(3px);
+        }
+      }
+    }
+
+    .list-card {
+      margin-top: 10px;
+      height: 340px;
+      overflow-y: auto;
+      padding-right: 4px;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 10px;
+      }
+      &:-webkit-scrollbar-thumb {
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: #ff6b81; 
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      margin-right: 12px;
+      i {
+        font-size: 20px;
+      }
+    }
+    p {
+      color: #dadada;
+    }
+  } 
+}
+
+// <i class="fa-solid fa-plus"></i> <i class="fa-solid fa-pen-to-square"></i>
